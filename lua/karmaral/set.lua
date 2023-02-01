@@ -21,7 +21,7 @@ else
 
   vim.opt.swapfile = false
   vim.opt.backup = false
-  vim.opt.undodir = 'C:/Users/Amaral/.vim/undodir/'
+  vim.opt.undodir = os.getenv('USERPROFILE') .. '/.vim/undodir/'
 
   vim.opt.undofile = true
 
