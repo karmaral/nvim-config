@@ -1,7 +1,7 @@
-local gitui = require("gitui")
+if vim.g.vscode then
+	else
+	local gitui = require('gitui')
+	gitui.setup()
 
-gitui.setup()
-
-
-vim.keymap.set("n", "<leader>G", gitui.open)
-
+	vim.keymap.set('n', '<leader>G', gitui.open)
+end

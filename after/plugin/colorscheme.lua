@@ -1,5 +1,6 @@
+vim.o.termguicolors = true
+
 function ApplyColor(color)
-	color = color or 'rose-pine'
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
@@ -7,8 +8,9 @@ function ApplyColor(color)
 end
 
 if vim.g.vscode then
-  ApplyColor('default')
+	-- VSCode Neovim
+	ApplyColor('default')
 else
-  -- ordinary Neovim
-  ApplyColor('rose-pine')
+	-- ordinary Neovim
+	ApplyColor('rose-pine')
 end
