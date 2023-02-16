@@ -5,10 +5,13 @@ if vim.g.vscode then
 else
 	-- ordinary Neovim
 
+	vim.g.loaded_netrw = 1
+	vim.g.loaded_netrwPlugin = 1
 	vim.g.netrw_liststyle = 3
 
 	vim.opt.nu = true
 	vim.opt.rnu = true
+	vim.o.scrolloff = 8
 
 	vim.opt.tabstop = 2
 	vim.opt.softtabstop = 2
@@ -37,7 +40,6 @@ else
 	vim.opt.smartcase = true
 
 	vim.opt.updatetime = 50
-	vim.o.scrolloff = 8
 	vim.wo.signcolumn = 'yes'
 
 	-- Set completeopt to have a better completion experience

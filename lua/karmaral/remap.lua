@@ -55,7 +55,8 @@ if vim.g.vscode then
 else
   -- ordinary Neovim
 
-  vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+  -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+  vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeToggle)
 
 
   -- easier indents

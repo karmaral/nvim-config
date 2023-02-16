@@ -55,6 +55,10 @@ return require('packer').startup(function(use)
 		use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
 		use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'} -- Folding
 
+		use {
+			'nvim-tree/nvim-tree.lua',
+			requires = { 'nvim-tree/nvim-web-devicons' }
+		}
 		-- Fuzzy Finder (files, lsp, etc)
 		use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
 
