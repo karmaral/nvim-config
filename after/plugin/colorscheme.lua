@@ -12,5 +12,9 @@ if vim.g.vscode then
 	ApplyColor('default')
 else
 	-- ordinary Neovim
+	require('rose-pine').setup({
+			disable_italics = true,
+		})
+
 	ApplyColor('rose-pine')
 end

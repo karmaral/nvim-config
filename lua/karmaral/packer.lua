@@ -47,20 +47,13 @@ return require('packer').startup(function(use)
 		use 'lewis6991/gitsigns.nvim'
 		use 'aspeddro/gitui.nvim'
 
-		use ({
-			'rose-pine/neovim',
-			as = 'rose-pine',
-			config = function()
-				require('rose-pine').setup()
-				vim.cmd('colorscheme rose-pine')
-			end
-		})
+		use ({ 'rose-pine/neovim', as = 'rose-pine' })
 		use 'navarasu/onedark.nvim' -- Theme inspired by Atom
 		use 'nvim-lualine/lualine.nvim' -- Fancier statusline
 		use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
 		use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 		use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
-k	use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'} -- Folding
+		use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'} -- Folding
 
 		-- Fuzzy Finder (files, lsp, etc)
 		use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
